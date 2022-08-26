@@ -2,6 +2,9 @@
   "cacheDirectories": [".next/cache"],
   "name": "test-next-apollo",
   "version": "0.1.0",
+  "engines": {
+    "node": "16.17.0"
+  },
   "private": true,
   "scripts": {
     "dev": "next dev",
