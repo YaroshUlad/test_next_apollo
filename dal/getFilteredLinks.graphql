@@ -1,0 +1,21 @@
+query getFilteredLinks ($filter: String!) {
+    feed(filter: $filter) {
+        count
+        links {
+            id
+            description
+            url
+            postedBy {
+                id
+                name
+            }
+            votes {
+                id
+                user {
+                    id
+                    name
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.postWrapper {
+    width: 50%;
+    height: 200px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+   justify-content: space-between;
+}
+
+.description {
+    text-align: center;
+    white-space: nowrap;
+    height: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 10px;
+}
+
+.actionsArea {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    margin: 10px;
+}
+.votes {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
+.votes:hover {
+    cursor: pointer;
+}
+.voters {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: #2a2a2a 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #adacac;
+    color: #2a2a2a;
+}

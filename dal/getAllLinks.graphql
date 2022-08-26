@@ -1,0 +1,21 @@
+query getAllLinks {
+    feed {
+        count
+        links {
+          id
+          description
+          url
+          postedBy {
+            id
+            name
+          }
+          votes {
+            id
+            user {
+              id
+              name
+            }
+          }
+        }
+      }
+}

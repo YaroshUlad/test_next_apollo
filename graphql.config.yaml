@@ -1,0 +1,16 @@
+overwrite: true
+schema:
+  - https://api.vrmarketing.guru:
+      headers: {
+        mode: 'no-cors'
+      }
+documents:
+  - 'dal/**/*.graphql'
+generates:
+  dal/generated/graphql.tsx:
+    plugins:
+      - 'typescript'
+      - 'typescript-operations'
+      - 'typescript-react-apollo'
+    config:
+      withRefetchFn: true

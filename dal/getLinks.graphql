@@ -1,0 +1,21 @@
+query GetLinksPagination ($take: Int!, $skip: Int!){
+    feed(take: $take, skip: $skip) {
+        count
+        links {
+            id
+            description
+            url
+            postedBy {
+                id
+                name
+            }
+            votes {
+                id
+                user {
+                    id
+                    name
+                }
+            }
+        }
+    }
+}

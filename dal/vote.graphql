@@ -1,0 +1,5 @@
+mutation Vote ($linkId: ID!) {
+    vote(linkId: $linkId) {
+        id
+    }
+}
