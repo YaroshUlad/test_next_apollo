@@ -57,6 +57,7 @@ const Home = (props: InferGetServerSidePropsType<typeof getServerSideProps>) => 
 
 		const scrollHandler = (e: Event) => {
 
+			// @ts-ignore
 			if (e.target!.documentElement.scrollHeight - e.target!.documentElement!.scrollTop -
 				window.innerHeight < 5 && posts.length <= count) {
 				setFetching(true);
